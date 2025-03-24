@@ -1,4 +1,6 @@
-public class Produto {
+package src.Q5_VendaKits.src;
+
+public class Produto implements ProdutoComponent {
     private int id;
     private String nome;
     private double preco;
@@ -9,16 +11,18 @@ public class Produto {
         this.preco = preco;
     }
 
+    @Override
     public int getId() {
         return id;
     }
 
+    @Override
     public String getNome() {
         return nome;
     }
 
+    @Override
     public double getPreco() {
         return preco;
     }
-
 }

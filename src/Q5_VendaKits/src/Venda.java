@@ -1,3 +1,5 @@
+package src.Q5_VendaKits.src;
+
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -28,7 +30,7 @@ public class Venda {
         return total;
     }
 
-    public void registrarVenda(Produto produto, int quantidade) {
+    public void registrarVenda(ProdutoComponent produto, int quantidade) {
         ItemDeVenda item = new ItemDeVenda(produto, quantidade);
         itens.add(item);
     }

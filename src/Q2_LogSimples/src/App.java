@@ -1,3 +1,5 @@
+package src.Q2_LogSimples.src;
+
 public class App {
     public static void main(String[] args) throws Exception {
         LogSimples log = new LogSimples();

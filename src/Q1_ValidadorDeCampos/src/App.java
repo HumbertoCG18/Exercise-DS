@@ -1,3 +1,5 @@
+package src.Q1_ValidadorDeCampos.src;
+
 public class App {
     public static void main(String[] args) throws Exception {
         String email = "bernardo.copstein@pucrs.br";

@@ -1,3 +1,5 @@
+package src.Q2_LogSimples.src;
+
 import java.time.LocalDate;
 import java.util.Iterator;
 import java.util.LinkedList;

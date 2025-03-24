@@ -1,3 +1,5 @@
+package src.Q1_ValidadorDeCampos.src;
+
 public class Validador{
     public enum Tipo { EMAIL, INTEIRO, MATRICULA }
 
