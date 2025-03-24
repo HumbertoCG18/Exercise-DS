@@ -1,3 +1,5 @@
+package src.Q6_JogoDeAzar.src;
+
 public class App {
     public static void main(String[] args) {
         Dado d6 = new Dado(6);

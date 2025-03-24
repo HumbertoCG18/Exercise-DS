@@ -1,3 +1,5 @@
+package src.Q6_JogoDeAzar.src;
+
 import java.util.ArrayList;
 
 public class DadoHistorico implements DadoInterface {
