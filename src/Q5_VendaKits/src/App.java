@@ -1,7 +1,6 @@
 package src.Q5_VendaKits.src;
 
 import java.util.List;
-
 public class App {
     public static void main(String[] args) {
         VendasFachada proc = new VendasEmMemoria();

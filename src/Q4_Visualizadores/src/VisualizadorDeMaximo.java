@@ -1,17 +1,18 @@
 import java.util.List;
+import java.util.OptionalInt;
 
-public class VisualizadorDeSomatorio implements Observador {
+public class VisualizadorDeMaximo implements Observador {
     private List<Integer> valores;
     private boolean ligado;
 
-    public VisualizadorDeSomatorio() {
+    public VisualizadorDeMaximo() {
         this.ligado = false; // Começa desligado
     }
 
     @Override
     public void atualizar(FonteDeDados fonte) {
         this.valores = fonte.getValores();
-        exibeSomatorio();
+        exibeMaximo();
     }
 
     @Override
@@ -29,10 +30,16 @@ public class VisualizadorDeSomatorio implements Observador {
         return ligado;
     }
 
-    public void exibeSomatorio() {
-        Integer soma = valores.stream()
+    public void exibeMaximo() {
+        if (valores.isEmpty()) {
+            System.out.println("Máximo: N/A (sem valores)");
+            return;
+        }
+        
+        OptionalInt maximo = valores.stream()
                 .mapToInt(Integer::intValue)
-                .sum();
-        System.out.println("Somatorio: " + soma + ", quantidade de elementos analisados: " + valores.size());
+                .max();
+        
+        System.out.println("Máximo: " + maximo.getAsInt() + ", quantidade de elementos analisados: " + valores.size());
     }
 }
